@@ -123,6 +123,19 @@ a.logo {
 	
 	box-shadow: 0 0.3rem 0.7rem #333333;
 }
+
+div.fun {
+	font-family: courier;
+	font-size: 8rem;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: -2px 0 red, 0 2px red, 0 5px 0.5rem red, 2px 0 red, 0 -2px red;
+	
+}
+
+span#kern1, span#kern3{
+	letter-spacing: -1.5rem;
+}
 /* end */
 
 /* Han's section */
