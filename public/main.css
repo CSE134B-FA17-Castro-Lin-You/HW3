@@ -141,8 +141,20 @@ span#kern1, span#kern3{
 #zap{
     background-color: #f3e96a;
     border-style: double;
-    border-radius: 5px;
-    border-width: 5px;
+    border-radius: 0.6rem;
+    border-width: 0.6rem;
+	
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2rem;
+	margin-bottom: 6rem;
+	font-size: 3rem;
+	text-shadow: 0 3px 0.1rem #333333, 0 2px 0.1rem #333333;
+}
+
+section#zap > h3 > img {
+	width: 1.8rem;
 }
 
 
