@@ -59,3 +59,12 @@ aside {
 /* Solution given should
    be below 250 lines, the solution we had was
    below 200 easily formatted */
+
+footer{
+  background-color: #fd4fc2;
+  font-family: Comic Sans Ms;
+}
+
+footer > div > img{
+    text-align: center;
+}
