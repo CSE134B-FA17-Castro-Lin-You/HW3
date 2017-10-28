@@ -23,11 +23,11 @@ body {
 }
 
 main {
-<<<<<<< HEAD
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-=======
+
     background-image: url("border.gif");
 	background-color: white;
 	
@@ -40,7 +40,7 @@ main {
 	margin-right: 10%;
 	margin-left: 10%;
 	margin-bottom: 10%;
->>>>>>> facb73382c5aec249bfe7aa0c3d5318e27fbfde9
+
 }
 header {
 	width: 90%;
@@ -63,18 +63,18 @@ section > div {
     font-family: 'Comic Sans MS';
 }
 
-section > div:nth-of-type(even)  {
+section > div:nth-of-type(odd)  {
 	/* ANastNthChildSelectorToWrite means what it says it isn't an indetifier */
 	background-color: rgb(192,77,249);
     display: flex;
     align-items: center;
     justify-content: center;
-     content: " &#9829";
+    content: " &#9829";
     width: 80%;
     height: 100px;
-    flex:1;  
+    text-transform: lowercase;
 }
-section > div:nth-of-type(odd) {
+section > div:nth-of-type(even) {
 	/* ANastNthChildSelectorToWrite means what it says it isn't an indetifier */
     background-color:  rgb(43,209,252);
     display: flex;
@@ -83,6 +83,7 @@ section > div:nth-of-type(odd) {
     width: 80%;
     height: 100px;
     width: 80%;
+    text-transform: lowercase;
 }
 section > div:nth-child(3):after {
 	/* gave you the nth child after selector for free to inspire you */
@@ -93,6 +94,7 @@ section > div:nth-child(3):after {
 	/* some free rules for fun */
 aside {
     display: flex;
+    align-items: center;
     justify-content: center;
     align-self: center;
     width: 80%;
@@ -100,9 +102,22 @@ aside {
     color: white;
     border: 1rem solid black;
     border-top-left-radius: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 1rem;
     font-family: sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+p{
+    font-size:100%;
+    padding: 0.5cm 1cm;
 }
 p > svg{
+    float:left
+    align-content: center;
+    width:20px;
+    height: 20px;
     fill:white;
 }
 /* Oh no! The file has been truncated I guess you have to fill it in */
@@ -130,10 +145,8 @@ a.logo {
 	box-shadow: 0 0.3rem 0.7rem #333333;
 }
 
-<<<<<<< HEAD
 
 /* Bryle's section */
-=======
 div.fun {
 	font-family: courier;
 	font-size: 8rem;
@@ -142,7 +155,6 @@ div.fun {
 	text-shadow: -2px 0 red, 0 2px red, 0 5px 0.5rem red, 2px 0 red, 0 -2px red;
 	
 }
->>>>>>> facb73382c5aec249bfe7aa0c3d5318e27fbfde9
 
 span#kern1, span#kern3{
 	letter-spacing: -1.5rem;
