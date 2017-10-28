@@ -140,4 +140,28 @@ span#kern1, span#kern3{
 
 /* Han's section */
 
+footer{
+  background-color: #fd4fc2;
+  text-align: center;
+  font-family: Apple Chancery;
+}
+
+footer > div > img{
+  display: block;
+  margin: auto;
+  width: 20%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+footer > div > span{
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  background-color: white;
+  border: 8px solid black;
+  padding: 8px;
+  border-radius: 10px;
+
+
 /* end */
