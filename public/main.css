@@ -155,6 +155,15 @@ span#kern1, span#kern3{
 
 /* Han's section */
 
+
+#zap{
+    background-color: #f3e96a;
+    border-style: double;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+
 footer{
   background-color: #fd4fc2;
   text-align: center;
@@ -167,16 +176,24 @@ footer > div > img{
   width: 20%;
   padding-top: 35px;
   padding-bottom: 35px;
+  display:block;
+}
+
+footer > div > img:hover + footer > div > span{
+  display:none;
 }
 
 footer > div > span{
-  width: 500px;
-  height: 400px;
+  width: 100px;
+  height: 50px;
   text-align: center;
   background-color: white;
   border: 8px solid black;
   padding: 8px;
   border-radius: 10px;
+}
+
+
 
 
 /* end */
