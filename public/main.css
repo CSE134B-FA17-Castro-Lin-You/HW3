@@ -30,14 +30,16 @@ main {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	
-	padding: 5%;
-	padding-top: 10%;
+	padding: 20% 5% 20% 5%;
 	
 	margin-right: 10%;
 	margin-left: 10%;
 	margin-bottom: 10%;
 }
 header {
+	width: 90%;
+	margin-left: auto;
+	margin-bottom: 5rem;
 }
 section {
 	/* color rgb(243,234,95) is used */
