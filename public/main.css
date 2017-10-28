@@ -13,9 +13,17 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'apple_chancerychancery';
+    src: url('apple_chancery-webfont.woff2') format('woff2'),
+         url('apple_chancery-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     background-image: url("background.png");
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,12 +34,14 @@ main {
 	border: 2rem solid transparent;
     border-image: url("border.gif") 21 round;
 	background-color: white;
-	
-	padding-top: 4rem;
-	
+    padding-top: 4rem;
 	margin-right: 10%;
 	margin-left: 10%;
 	margin-bottom: 10%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 header {
 	width: 90%;
@@ -54,48 +64,62 @@ section > div {
     font-family: 'Comic Sans MS';
 }
 
-section > div:nth-of-type(even)  {
+section > div:nth-of-type(odd)  {
 	/* ANastNthChildSelectorToWrite means what it says it isn't an indetifier */
 	background-color: rgb(192,77,249);
     display: flex;
     align-items: center;
     justify-content: center;
-     content: " &#9829";
+    content: " &#9829";
     width: 80%;
     height: 100px;
-    flex:1;  
+    text-transform: lowercase;
 }
-section > div:nth-of-type(odd) {
+section > div:nth-of-type(even) {
 	/* ANastNthChildSelectorToWrite means what it says it isn't an indetifier */
     background-color:  rgb(43,209,252);
     display: flex;
     align-items: center;
     justify-content: center;
-     width: 80%;
+    width: 80%;
     height: 100px;
     width: 80%;
+    text-transform: lowercase;
 }
 section > div:nth-child(3):after {
 	/* gave you the nth child after selector for free to inspire you */
 	/* generated content in here ... a property can do that */
     content: "\00a0\00a0\2665\2665\2665";
 }
-	
+
 	/* some free rules for fun */
 aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
     background: rgb(255,63,63);
     color: white;
+    align-self: center;
     border: 1rem solid black;
     border-top-left-radius: 1rem;
-    /* rem units are your friend use them often */
-
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 1rem;
     font-family: sans-serif;
-
-
+    
+    overflow: hidden;
     text-align: center;
 }
-
-
+p{
+    font-size:100%;
+    padding: 0.5cm 1cm;
+}
+p > svg{
+    width:20px;
+    height: 20px;
+    fill:white;
+}
 /* Oh no! The file has been truncated I guess you have to fill it in */
 
 /* Solution given should
@@ -121,13 +145,13 @@ a.logo {
 	box-shadow: 0 0.3rem 0.7rem #333333;
 }
 
+/* Bryle's section */
 div.fun {
 	font-family: courier;
 	font-size: 6rem;
 	text-transform: uppercase;
 	color: white;
 	text-shadow: -2px 0 red, 0 2px red, 0 5px 0.5rem red, 2px 0 red, 0 -2px red;
-	
 }
 
 span#kern1, span#kern3{
@@ -136,9 +160,9 @@ span#kern1, span#kern3{
 /* end */
 
 /* Han's section */
-
-
 #zap{
+    align-self: center;
+    width:80%;
     background-color: #f3e96a;
     border-style: double;
     border-radius: 0.6rem;
@@ -157,37 +181,62 @@ section#zap > h3 > img {
 	width: 1.8rem;
 }
 
-
 footer{
-  background-color: #fd4fc2;
-  text-align: center;
-  font-family: Apple Chancery;
+    background-color: #fd4fc2;
+    text-align: center;
+    font-family: 'apple_chancerychancery';
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-weight: bold;
+}
+
+footer > div{
+    display: inline;
+    margin-left: 10%;
 }
 
 footer > div > img{
+    display: inline;
+    width: 35%;
+    align-self: center;
+    padding-left: 15px;
+}
+
+footer > div > img:hover + span{
+    opacity: 1;
+}
+
+footer > div > span {
+    position: relative;
+    width: 75px;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    border: 8px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    vertical-align: top;
+    opacity: 0;
+}
+
+footer > div > span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border: 20px solid transparent;
+  border-right-color: black;
+  border-left: 0;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+    
+footer > span{
   display: block;
-  margin: auto;
-  width: 20%;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  display:block;
+  font-size: 150%;
+  padding-top: 2%;
 }
-
-footer > div > img:hover + footer > div > span{
-  display:none;
-}
-
-footer > div > span{
-  width: 100px;
-  height: 50px;
-  text-align: center;
-  background-color: white;
-  border: 8px solid black;
-  padding: 8px;
-  border-radius: 10px;
-}
-
-
 
 
 /* end */
