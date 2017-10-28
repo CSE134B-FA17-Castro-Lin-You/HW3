@@ -101,13 +101,9 @@ aside {
     border: 1rem solid black;
     border-top-left-radius: 1rem;
     font-family: sans-serif;
-   
 }
 p > svg{
     fill:white;
-    vertical-align: text-bottom;
-   
-
 }
 /* Oh no! The file has been truncated I guess you have to fill it in */
 
