@@ -23,14 +23,11 @@ body {
 }
 
 main {
-    background-image: url("border.gif");
+	border: 2rem solid transparent;
+    border-image: url("border.gif") 21 round;
 	background-color: white;
 	
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	
-	padding: 20% 5% 20% 5%;
+	padding-top: 4rem;
 	
 	margin-right: 10%;
 	margin-left: 10%;
@@ -39,7 +36,7 @@ main {
 header {
 	width: 90%;
 	margin-left: auto;
-	margin-bottom: 5rem;
+	margin-bottom: 6rem;
 }
 section {
 	/* color rgb(243,234,95) is used */
