@@ -48,6 +48,7 @@ section > div:nth-of-type(even)  {
     display: flex;
     align-items: center;
     justify-content: center;
+     content: " &#9829";
     width: 80%;
     height: 100px;
     flex:1;  
@@ -65,6 +66,7 @@ section > div:nth-of-type(odd) {
 section > div:nth-child(3):after {
 	/* gave you the nth child after selector for free to inspire you */
 	/* generated content in here ... a property can do that */
+    content: "\00a0\00a0\2665\2665\2665";
 }
 	
 	/* some free rules for fun */
