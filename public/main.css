@@ -14,20 +14,38 @@
 }
 
 body {
-  background-image: url("background.png");
+    background-image: url("background.png");
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: center;
+=======
+    background-image: url("border.gif");
+	background-color: white;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	padding: 20% 5% 20% 5%;
+	
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 10%;
+>>>>>>> facb73382c5aec249bfe7aa0c3d5318e27fbfde9
 }
 header {
+	width: 90%;
+	margin-left: auto;
+	margin-bottom: 5rem;
 }
 section {
 	/* color rgb(243,234,95) is used */
@@ -97,28 +115,68 @@ p > svg{
    be below 250 lines, the solution we had was
    below 200 easily formatted */
 
-a.logo {
-    font-family: 'Monoton', cursive;
-    text-decoration: none;
-    color: black;
-    font-size: 5rem;
-
-    background: pink;
-    border-bottom-left-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-}
-
-
 /* Bryle's section */
 
 /* end */
 
 /* Harrison's section */
+a.logo {
+    font-family: 'Monoton', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 5rem;
+    background: rgb(255,80,200);
+    border-radius: 50%;
+	
+	display: inline-block;
+	padding: 1rem;
+	
+	box-shadow: 0 0.3rem 0.7rem #333333;
+}
 
+<<<<<<< HEAD
+
+/* Bryle's section */
+=======
+div.fun {
+	font-family: courier;
+	font-size: 8rem;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: -2px 0 red, 0 2px red, 0 5px 0.5rem red, 2px 0 red, 0 -2px red;
+	
+}
+>>>>>>> facb73382c5aec249bfe7aa0c3d5318e27fbfde9
+
+span#kern1, span#kern3{
+	letter-spacing: -1.5rem;
+}
 /* end */
 
 /* Han's section */
+
+footer{
+  background-color: #fd4fc2;
+  text-align: center;
+  font-family: Apple Chancery;
+}
+
+footer > div > img{
+  display: block;
+  margin: auto;
+  width: 20%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+footer > div > span{
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  background-color: white;
+  border: 8px solid black;
+  padding: 8px;
+  border-radius: 10px;
+
 
 /* end */
