@@ -150,30 +150,42 @@ footer{
   background-color: #fd4fc2;
   text-align: center;
   font-family: Apple Chancery;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+footer > div{
+  display: inline;
+  margin: auto;
 }
 
 footer > div > img{
-  display: block;
-  margin: auto;
+  display: inline;
   width: 20%;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  display:block;
 }
 
-footer > div > img:hover + footer > div > span{
-  display:none;
-}
 
 footer > div > span{
-  width: 100px;
+  width: 75px;
   height: 50px;
   text-align: center;
   background-color: white;
   border: 8px solid black;
   padding: 8px;
   border-radius: 10px;
+  vertical-align: top;
 }
+
+footer > div > span:before{
+  content:"";
+  left: 100%;
+  top: 50px;
+  border-top: 25px solid transparent;
+  border-right: 50px solid black;
+  border-bottom: 25px solid transparent;
+  vertical-align: top;
+}
+    
 
 
 
