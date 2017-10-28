@@ -14,15 +14,28 @@
 }
 
 body {
-  background-image: url("background.png");
+    background-image: url("background.png");
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
+    background-image: url("border.gif");
+	background-color: white;
+	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	padding: 5%;
+	padding-top: 10%;
+	
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom: 10%;
 }
 header {
 }
@@ -74,25 +87,24 @@ aside {
    be below 250 lines, the solution we had was
    below 200 easily formatted */
 
-a.logo {
-    font-family: 'Monoton', cursive;
-    text-decoration: none;
-    color: black;
-    font-size: 5rem;
-
-    background: pink;
-    border-bottom-left-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-}
-
 /* Bryle's section */
 
 /* end */
 
 /* Harrison's section */
-
+a.logo {
+    font-family: 'Monoton', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 5rem;
+    background: rgb(255,80,200);
+    border-radius: 50%;
+	
+	display: inline-block;
+	padding: 1rem;
+	
+	box-shadow: 0 0.3rem 0.7rem #333333;
+}
 /* end */
 
 /* Han's section */
