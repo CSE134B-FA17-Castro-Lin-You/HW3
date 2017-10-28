@@ -1,13 +1,19 @@
 /* Hint: use relative measurements you'll find them useful! */
 /* I may have removed a selector or two */
 
-@import url();  /* Set this for Monton a Google Font ...figure out their syntax */
+@import url('https://fonts.googleapis.com/css?family=Monoton');  /* Set this for Monton a Google Font ...figure out their syntax */
 
 * {
     box-sizing: border-box;
 }
 
 body {
+  background-image: url("background.png");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
@@ -20,9 +26,10 @@ section {
 }
 section > div {
     /* font is 'Comic Sans MS, text is automatically adjusted to lowercase do not mod the HTML */
-    
-    
+    font-family: 'Comic Sans MS';
 }
+
+
 section > aNastyNthChildSelectorToWrite {
 	/* ANastNthChildSelectorToWrite means what it says it isn't an indetifier */
 	/* background color is  rgb(192,77,249) */
@@ -59,3 +66,24 @@ aside {
 /* Solution given should
    be below 250 lines, the solution we had was
    below 200 easily formatted */
+
+a.logo {
+    font-family: 'Monoton', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 5rem;
+
+    background: pink;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+}
+
+/* Bryle's section */
+
+/* end */
+
+/* Harrison's section */
+
+/* end */
