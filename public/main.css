@@ -37,7 +37,7 @@ main {
 header {
 	width: 90%;
 	margin-left: auto;
-	margin-bottom: 6rem;
+	margin-bottom: 4rem;
 }
 section {
 	/* color rgb(243,234,95) is used */
@@ -126,7 +126,7 @@ a.logo {
     font-family: 'Monoton', cursive;
     text-decoration: none;
     color: black;
-    font-size: 5rem;
+    font-size: 4rem;
     background: rgb(255,80,200);
     border-radius: 50%;
 	
@@ -140,7 +140,7 @@ a.logo {
 /* Bryle's section */
 div.fun {
 	font-family: courier;
-	font-size: 8rem;
+	font-size: 6rem;
 	text-transform: uppercase;
 	color: white;
 	text-shadow: -2px 0 red, 0 2px red, 0 5px 0.5rem red, 2px 0 red, 0 -2px red;
