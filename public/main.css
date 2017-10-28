@@ -13,6 +13,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'apple_chancerychancery';
+    src: url('apple_chancery-webfont.woff2') format('woff2'),
+         url('apple_chancery-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     background-image: url("background.png");
     background-attachment: fixed;
@@ -136,7 +145,6 @@ a.logo {
 	box-shadow: 0 0.3rem 0.7rem #333333;
 }
 
-
 /* Bryle's section */
 div.fun {
 	font-family: courier;
@@ -144,7 +152,6 @@ div.fun {
 	text-transform: uppercase;
 	color: white;
 	text-shadow: -2px 0 red, 0 2px red, 0 5px 0.5rem red, 2px 0 red, 0 -2px red;
-	
 }
 
 span#kern1, span#kern3{
@@ -153,8 +160,6 @@ span#kern1, span#kern3{
 /* end */
 
 /* Han's section */
-
-
 #zap{
     align-self: center;
     width:80%;
@@ -164,49 +169,62 @@ span#kern1, span#kern3{
     border-width: 5px;
 }
 
-
 footer{
-  background-color: #fd4fc2;
-  text-align: center;
-  font-family: Apple Chancery;
-  padding-top: 35px;
-  padding-bottom: 35px;
+    background-color: #fd4fc2;
+    text-align: center;
+    font-family: 'apple_chancerychancery';
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-weight: bold;
 }
 
 footer > div{
-  display: inline;
-  margin: auto;
+    display: inline;
+    margin-left: 10%;
 }
 
 footer > div > img{
-  display: inline;
-  width: 20%;
+    display: inline;
+    width: 35%;
+    align-self: center;
+    padding-left: 15px;
 }
 
-
-footer > div > span{
-  width: 75px;
-  height: 50px;
-  text-align: center;
-  background-color: white;
-  border: 8px solid black;
-  padding: 8px;
-  border-radius: 10px;
-  vertical-align: top;
+footer > div > img:hover + span{
+    opacity: 1;
 }
 
-footer > div > span:before{
-  content:"";
-  left: 100%;
-  top: 50px;
-  border-top: 25px solid transparent;
-  border-right: 50px solid black;
-  border-bottom: 25px solid transparent;
-  vertical-align: top;
+footer > div > span {
+    position: relative;
+    width: 75px;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    border: 8px solid black;
+    padding: 8px;
+    border-radius: 10px;
+    vertical-align: top;
+    opacity: 0;
 }
+
+footer > div > span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border: 20px solid transparent;
+  border-right-color: black;
+  border-left: 0;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
     
-
-
+footer > span{
+  display: block;
+  font-size: 150%;
+  padding-top: 2%;
+}
 
 
 /* end */
