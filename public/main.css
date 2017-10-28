@@ -15,7 +15,6 @@
 
 body {
     background-image: url("background.png");
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,17 +25,19 @@ main {
 	border: 2rem solid transparent;
     border-image: url("border.gif") 21 round;
 	background-color: white;
-	
-	padding-top: 4rem;
-	
+    padding-top: 4rem;
 	margin-right: 10%;
 	margin-left: 10%;
 	margin-bottom: 10%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 header {
 	width: 90%;
 	margin-left: auto;
-	margin-bottom: 6rem;
+	margin-bottom: 4rem;
 }
 section {
 	/* color rgb(243,234,95) is used */
@@ -54,48 +55,62 @@ section > div {
     font-family: 'Comic Sans MS';
 }
 
-section > div:nth-of-type(even)  {
+section > div:nth-of-type(odd)  {
 	/* ANastNthChildSelectorToWrite means what it says it isn't an indetifier */
 	background-color: rgb(192,77,249);
     display: flex;
     align-items: center;
     justify-content: center;
-     content: " &#9829";
+    content: " &#9829";
     width: 80%;
     height: 100px;
-    flex:1;  
+    text-transform: lowercase;
 }
-section > div:nth-of-type(odd) {
+section > div:nth-of-type(even) {
 	/* ANastNthChildSelectorToWrite means what it says it isn't an indetifier */
     background-color:  rgb(43,209,252);
     display: flex;
     align-items: center;
     justify-content: center;
-     width: 80%;
+    width: 80%;
     height: 100px;
     width: 80%;
+    text-transform: lowercase;
 }
 section > div:nth-child(3):after {
 	/* gave you the nth child after selector for free to inspire you */
 	/* generated content in here ... a property can do that */
     content: "\00a0\00a0\2665\2665\2665";
 }
-	
+
 	/* some free rules for fun */
 aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
     background: rgb(255,63,63);
     color: white;
+    align-self: center;
     border: 1rem solid black;
     border-top-left-radius: 1rem;
-    /* rem units are your friend use them often */
-
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 1rem;
     font-family: sans-serif;
-
-
+    
+    overflow: hidden;
     text-align: center;
 }
-
-
+p{
+    font-size:100%;
+    padding: 0.5cm 1cm;
+}
+p > svg{
+    width:20px;
+    height: 20px;
+    fill:white;
+}
 /* Oh no! The file has been truncated I guess you have to fill it in */
 
 /* Solution given should
@@ -111,7 +126,7 @@ a.logo {
     font-family: 'Monoton', cursive;
     text-decoration: none;
     color: black;
-    font-size: 5rem;
+    font-size: 4rem;
     background: rgb(255,80,200);
     border-radius: 50%;
 	
@@ -121,9 +136,11 @@ a.logo {
 	box-shadow: 0 0.3rem 0.7rem #333333;
 }
 
+
+/* Bryle's section */
 div.fun {
 	font-family: courier;
-	font-size: 8rem;
+	font-size: 6rem;
 	text-transform: uppercase;
 	color: white;
 	text-shadow: -2px 0 red, 0 2px red, 0 5px 0.5rem red, 2px 0 red, 0 -2px red;
@@ -139,6 +156,8 @@ span#kern1, span#kern3{
 
 
 #zap{
+    align-self: center;
+    width:80%;
     background-color: #f3e96a;
     border-style: double;
     border-radius: 5px;
